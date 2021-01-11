@@ -4,7 +4,7 @@
 
 
 # NIK Parse With Go
-<a href="https://afrizalmy.com"><img src="https://img.shields.io/appveyor/build/afrizal423/go-NIK-parse" alt="me"></a>
+<a href="https://afrizalmy.com"><img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="me"></a>
 
 Parse Nomor Induk Kependudukan (NIK) KTP Menggunakan Golang. Dengan mengetahui nomor NIK bisa mendapatkan beberapa informasi seperti pada [hasil output](#output). Cara kerjanya seperti kita mengekstrak perdigit dari NIK.
 
