@@ -69,15 +69,11 @@ func GetdataNIK(nik string) Hasil {
 		year, _, _ := time.Now().Date()
 		year = year % 1e2
 		if tahunNIK <= int64(year) {
-			if tahunNIK == 0 || tahunNIK < 9 {
-				thnlahir = fmt.Sprintf("200%d", tahunNIK)
-			} else if tahunNIK > 9 {
-				thnlahir = fmt.Sprintf("200%d", tahunNIK)
-			} else {
-				thnlahir = fmt.Sprintf("20%d", tahunNIK)
-			}
+			tahunNIK += 2000
+			thnlahir = fmt.Sprint(tahunNIK)
 		} else {
-			thnlahir = fmt.Sprintf("19" + thnNIK)
+			tahunNIK += 1900
+			thnlahir = fmt.Sprint(tahunNIK)
 		}
 		bulanlahir = nik[8:10]
 		hasil.NIK = nik
